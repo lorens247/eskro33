@@ -1,0 +1,321 @@
+{
+	"user":[
+		{
+			"name":"All",
+			"route":"admin.users.all",
+			"icon":"las la-users"
+		},
+		{
+			"name":"Active",
+			"route":"admin.users.active",
+			"icon":"las la-user-check"
+		},
+		{
+			"name":"Banned",
+			"route":"admin.users.banned",
+			"icon":"las la-user-slash",
+			"action_key":"banned_users_count"
+		},
+		{
+			"name":"Email Unverified",
+			"route":"admin.users.email.unverified",
+			"icon":"las la-comment-slash",
+			"action_key":"email_unverified_users_count"
+		},
+		{
+			"name":"SMS Unverified",
+			"route":"admin.users.sms.unverified",
+			"icon":"las la-phone-slash",
+			"action_key":"sms_unverified_users_count"
+		},
+		{
+			"name":"With Balance",
+			"route":"admin.users.with.balance",
+			"icon":"las la-coins"
+		},
+		{
+			"name":"Notification to All",
+			"route":"admin.users.notification.all",
+			"icon":"las la-mail-bulk"
+		}
+	],
+	"withdraw":[
+		{
+			"name":"All",
+			"route":"admin.withdraw.log",
+			"extra_route":[
+				"admin.users.withdrawals"
+			],
+			"icon":"las la-clipboard-list"
+		},
+		{
+			"name":"Pending",
+			"route":"admin.withdraw.pending",
+			"icon":"lar la-pause-circle",
+			"action_key":"pending_withdraw_count"
+		},
+		{
+			"name":"Successful",
+			"route":"admin.withdraw.approved",
+			"icon":"las la-check-circle"
+		},
+		{
+			"name":"Rejected",
+			"route":"admin.withdraw.rejected",
+			"icon":"las la-ban"
+		}
+	],
+	"support":[
+		{
+			"name":"All",
+			"route":"admin.ticket",
+			"icon":"las la-clipboard-list"
+		},
+		{
+			"name":"Pending",
+			"route":"admin.ticket.pending",
+			"icon":"las la-pause-circle",
+			"action_key":"pending_ticket_count"
+		},
+		{
+			"name":"Closed",
+			"route":"admin.ticket.closed",
+			"icon":"las la-times-circle"
+		}
+	],
+	"gateway":[
+		{
+			"name":"Automated",
+			"route":"admin.gateway.automatic.index",
+			"icon":"las la-magic"
+		},
+		{
+			"name":"Manual",
+			"route":"admin.gateway.manual.index",
+			"icon":"las la-pen-nib"
+		}
+	],
+	"deposit":[
+		{
+			"name":"All",
+			"route":"admin.deposit.list",
+			"extra_route":[
+				"admin.users.deposits"
+			],
+			"icon":"las la-clipboard-list"
+		},
+		{
+			"name":"Pending",
+			"route":"admin.deposit.pending",
+			"icon":"lar la-pause-circle",
+			"action_key":"pending_deposits_count"
+		},
+		{
+			"name":"Successful",
+			"route":"admin.deposit.successful",
+			"icon":"las la-check-circle"
+		},
+		{
+			"name":"Rejected",
+			"route":"admin.deposit.rejected",
+			"icon":"las la-ban"
+		}
+	],
+	"report":[
+		{
+			"name":"Transactions",
+			"route":"admin.report.transaction",
+			"extra_route":[
+				"admin.report.transaction.search"
+			],
+			"icon":"las la-exchange-alt"
+		},
+		{
+			"name":"Logins",
+			"route":"admin.report.login.history",
+			"extra_route":[
+				"admin.report.login.ipHistory"
+			],
+			"icon":"las la-list-alt"
+		},
+		{
+			"name":"Email",
+			"route":"admin.report.email.history",
+			"icon":"las la-envelope-open-text"
+		},
+		{
+			"name":"SMS",
+			"route":"admin.report.sms.history",
+			"icon":"las la-sms"
+		},
+		{
+			"name":"Telegram",
+			"route":"admin.report.telegram.history",
+			"icon":"lab la-telegram-plane"
+		}
+	],
+	"setting":[
+		{
+			"name":"General",
+			"route":"admin.setting.index",
+			"icon":"las la-cog"
+		},
+		{
+			"name":"Logo & Favicon",
+			"route":"admin.setting.logo.icon",
+			"icon":"las la-photo-video"
+		},
+		{
+			"name":"SEO",
+			"route":"admin.setting.seo",
+			"icon":"lab la-searchengin"
+		},
+		{
+			"name":"Cookie Policy",
+			"route":"admin.setting.cookie",
+			"icon":"las la-cookie-bite"
+		},
+		{
+			"name":"Captcha",
+			"route":"admin.setting.captcha",
+			"icon":"las la-fingerprint"
+		},
+		{
+			"name":"Language",
+			"route":"admin.setting.language.manage",
+			"extra_route":[
+				"admin.setting.language.key"
+			],
+			"icon":"las la-language"
+		},
+		{
+			"name":"Custom Assets",
+			"route":"admin.setting.custom.assets",
+			"icon":"las la-code"
+		}
+	],
+	"frontend":[
+		{
+			"name":"Pages",
+			"route":"admin.frontend.manage.pages",
+			"icon":"lar la-file-alt"
+		},
+		{
+			"name":"Sections",
+			"route":"admin.frontend.manage.section.all",
+			"icon":"lab la-stack-exchange"
+		}
+	],
+	"system":[
+		{
+			"name":"Application",
+			"route":"admin.system.info",
+			"icon":"las la-info-circle"
+		},
+		{
+			"name":"Server",
+			"route":"admin.system.server.info",
+			"icon":"las la-server"
+		},
+		{
+			"name":"Cache",
+			"route":"admin.system.optimize",
+			"icon":"las la-broom"
+		},
+		{
+			"name":"Support",
+			"route":"admin.system.support",
+			"icon":"las la-headset"
+		}
+	],
+	"notification":[
+		{
+			"name":"Global",
+			"route":"admin.notification.global",
+			"icon":"las la-globe"
+		},
+		{
+			"name":"Email",
+			"route":"admin.notification.email.setting",
+			"icon":"las la-envelope"
+		},
+		{
+			"name":"SMS",
+			"route":"admin.notification.sms.setting",
+			"icon":"las la-sms"
+		},
+		{
+			"name":"Telegram",
+			"route":"admin.notification.telegram.setting",
+			"icon":"lab la-telegram-plane"
+		},
+		{
+			"name":"Templates",
+			"route":"admin.notification.templates",
+			"extra_route":[
+				"admin.notification.template.edit"
+			],
+			"icon":"las la-layer-group"
+		}
+	],
+    "extension":[
+		{
+			"name":"Templates",
+			"route":"admin.extension.templates",
+			"icon":"las la-inbox"
+		},
+        {
+			"name":"Plugins",
+			"route":"admin.extension.plugins",
+			"icon":"las la-puzzle-piece"
+		},
+        {
+			"name":"Upload",
+			"route":"admin.extension.upload",
+			"icon":"las la-cloud-upload-alt"
+		}
+    ],
+    "escrow":[
+        {
+            "name":"All",
+            "route":"admin.escrow.index",
+            "icon":"las la-hand-holding-usd"
+        },
+        {
+            "name":"Accepted",
+            "route":"admin.escrow.accepted",
+            "icon":"las la-check-circle"
+        },
+        {
+            "name":"Not Accepted",
+            "route":"admin.escrow.not.accepted",
+            "icon":"las la-ban"
+        },
+        {
+            "name":"Completed",
+            "route":"admin.escrow.completed",
+            "icon":"las la-check-double"
+        },
+        {
+            "name":"Disputed",
+            "route":"admin.escrow.disputed",
+            "icon":"las la-spinner",
+            "action_key":"disputed_escrow"
+        },
+        {
+            "name":"Cancelled",
+            "route":"admin.escrow.cancelled",
+            "icon":"las la-times-circle"
+        },
+		{
+			"name":"Types",
+			"route":"admin.escrow.type.index",
+			"icon":"las la-list"
+		},
+		{
+			"name":"Charge",
+			"route":"admin.escrow.charge.index",
+			"icon":"las la-file-invoice-dollar"
+		}
+    ]
+}

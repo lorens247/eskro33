@@ -1,0 +1,110 @@
+{
+	"dashboard":{
+		"name":"Dashboard",
+		"route":"admin.dashboard",
+		"active_key":"admin.dashboard",
+		"icon":"fas fa-tachometer-alt"
+	},
+	"escrow":{
+		"name":"Escrow & Setting",
+		"route":"admin.escrow.index",
+		"active_key":"admin.escrow*",
+        "action_key":[
+			"disputed_escrow"
+		],
+		"icon":"fas fa-hand-holding-usd"
+	},
+	"users":{
+		"name":"Users",
+		"route":"admin.users.all",
+		"active_key":"admin.users*",
+		"action_key":[
+			"email_unverified_users_count",
+			"sms_unverified_users_count"
+		],
+		"icon":"fas fa-users"
+	},
+	"gateway":{
+		"name":"Deposit Methods",
+		"route":"admin.gateway.automatic.index",
+		"active_key":"admin.gateway*",
+		"icon":"fas fa-money-check-alt"
+	},
+	"deposit":{
+		"name":"Deposits",
+		"route":"admin.deposit.list",
+		"active_key":"admin.deposit*",
+		"action_key":[
+			"pending_deposits_count"
+		],
+		"icon":"fas fas fa-coins"
+	},
+	"withdraw":{
+		"name":"Withdraw Methods",
+		"route":"admin.withdrawal.method.index",
+		"active_key":"admin.withdrawal.method.index",
+		"icon":"fas fa-file-invoice-dollar"
+	},
+	"withdrawals":{
+		"name":"Withdrawals",
+		"route":"admin.withdraw.log",
+		"active_key":"admin.withdraw.*",
+		"action_key":[
+			"pending_withdraw_count"
+		],
+		"icon":"fas fa-hand-holding-usd"
+	},
+	"support":{
+		"name":"Support Tickets",
+		"route":"admin.ticket",
+		"active_key":"admin.ticket*",
+		"action_key":[
+			"pending_ticket_count"
+		],
+		"icon":"fas fa-headset"
+	},
+	"report":{
+		"name":"Reports",
+		"route":"admin.report.transaction",
+		"active_key":"admin.report*",
+		"icon":"fas fa-chart-line"
+	},
+	"settings":{
+		"name":"System Settings",
+		"route":"admin.setting.index",
+		"active_key":"admin.setting*",
+		"icon":"fas fa-cogs"
+	},
+	"notification":{
+		"name":"Notification Settings",
+		"route":"admin.notification.global",
+		"active_key":"admin.notification*",
+		"icon":"far fa-bell"
+	},
+	"frontend":{
+		"name":"Frontend Settings",
+		"route":"admin.frontend.manage.pages",
+		"active_key":"admin.frontend*",
+		"icon":"fas fa-palette"
+	},
+
+    "extension":{
+		"name":"Update & Extensions",
+		"route":"admin.extension.templates",
+		"active_key":"admin.extension*",
+		"icon":"fas fa-puzzle-piece"
+	},
+
+	"system":{
+		"name":"System",
+		"route":"admin.system.info",
+		"active_key":"admin.system*",
+		"icon":"fas fa-fire-alt"
+	},
+	"logout":{
+		"name":"Logout",
+		"route":"admin.logout",
+		"active_key":"admin.logout",
+		"icon":"fas fa-sign-out-alt"
+	}
+}
