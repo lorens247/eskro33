@@ -13,9 +13,6 @@
                                     <th>@lang('Note')</th>
                                     <th>@lang('Amount')</th>
                                     <th>@lang('Payment Status')</th>
-                                    @if(($escrow->buyer_id == auth()->user()->id) && ($restAmo > 0))
-                                    <th>@lang('Action')</th>
-                                    @endif
                                 </tr>
                             </thead>
                             <tbody>

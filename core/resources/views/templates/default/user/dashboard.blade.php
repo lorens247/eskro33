@@ -3,7 +3,7 @@
 <div class="dashboard-area ptb-80">
     <div class="container">
         <div class="row gy-4">
-            <div class="col-xl-8 col-lg-7 pe-xl-4">
+            <div class="@if($latestTransactions->count() > 0) col-xl-8 col-lg-7 pe-xl-4 @else col-md-12 @endif">
                 <div class="row gy-4">
                     <div class="col-xl-4 col-sm-6">
                         <div class="dashboard-item">
@@ -153,6 +153,7 @@
                     </div>
                 </div><!-- row end -->
             </div>
+            @if($latestTransactions->count() > 0)
             <div class="col-xl-4 col-lg-5">
                 <div class="dashboard-right-sidebar">
                     <div class="dashboard-right-sidebar-header mb-3">
@@ -175,6 +176,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         </div><!-- row end -->
     </div>
 </div>

@@ -197,6 +197,12 @@
     </div>
 @endsection
 
+
+@push('style-lib')
+<link rel="stylesheet" href="{{ asset('assets/admin/css/chat.css') }}">
+@endpush
+
+
 @push('script')
     <script>
         (function($){

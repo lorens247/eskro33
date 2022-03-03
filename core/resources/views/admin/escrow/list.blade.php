@@ -29,7 +29,7 @@
                                             <span class="fw-bold">{{ __($escrow->buyer->fullname) }}</span>
                                             <br>
                                             <span class="small">
-                                            <a href="{{ route('admin.users.detail',$escrow->id) }}"><span>@</span>{{ __($escrow->buyer->username) }}</a>
+                                            <a href="{{ route('admin.users.detail',$escrow->buyer->id) }}"><span>@</span>{{ __($escrow->buyer->username) }}</a>
                                             </span>
                                         @else
                                             {{ $escrow->invitation_mail }}
@@ -40,7 +40,7 @@
                                             <span class="fw-bold">{{ __($escrow->seller->fullname) }}</span>
                                             <br>
                                             <span class="small">
-                                            <a href="{{ route('admin.users.detail',$escrow->id) }}"><span>@</span>{{ __($escrow->seller->username) }}</a>
+                                            <a href="{{ route('admin.users.detail',$escrow->seller->id) }}"><span>@</span>{{ __($escrow->seller->username) }}</a>
                                             </span>
                                         @else
                                             {{ $escrow->invitation_mail }}

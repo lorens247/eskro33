@@ -33,6 +33,8 @@ if (file_exists(__DIR__.'/core/storage/framework/maintenance.php')) {
 
 require __DIR__.'/core/vendor/autoload.php';
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -46,10 +48,14 @@ require __DIR__.'/core/vendor/autoload.php';
 
 $app = require_once __DIR__.'/core/bootstrap/app.php';
 
+
+
 $kernel = $app->make(Kernel::class);
 
 $response = tap($kernel->handle(
     $request = Request::capture()
 ))->send();
 
+var_dump('ok');
+exit;
 $kernel->terminate($request, $response);

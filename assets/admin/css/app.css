@@ -3876,6 +3876,16 @@ th.w-85 {
     border: 1px solid #000000;
     color: #000000;
 }
+.badge--info {
+    background-color: rgba(28, 160, 242, 0.1);
+    border: 1px solid #1e9ff2;
+    color: #1e9ff2;
+}
+.badge--secondary {
+    background-color: rgba(134, 142, 150, 0.1);
+    border: 1px solid #868e96;
+    color: #868e96;
+}
 .payment-method-item .payment-method-header{
     display: flex;
     flex-wrap: wrap;
