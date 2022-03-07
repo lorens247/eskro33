@@ -24,6 +24,8 @@ Route::name('user.')->group(function () {
     Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/verify-code', 'Auth\ForgotPasswordController@verifyCode')->name('password.verify.code');
+    
+    // Remove Auth for user escrow create
     Route::get('escrow-create','EscrowController@create')->name('escrow.create');
     Route::post('escrow-create','EscrowController@nextToStore');
     Route::get('escrow-submit','EscrowController@escrowSubmit')->name('escrow.submit');
