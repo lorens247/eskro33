@@ -24,6 +24,10 @@ Route::name('user.')->group(function () {
     Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/verify-code', 'Auth\ForgotPasswordController@verifyCode')->name('password.verify.code');
+    Route::get('escrow-create','EscrowController@create')->name('escrow.create');
+    Route::post('escrow-create','EscrowController@nextToStore');
+    Route::get('escrow-submit','EscrowController@escrowSubmit')->name('escrow.submit');
+    
 });
 
 Route::name('user.')->group(function () {
@@ -33,6 +37,7 @@ Route::name('user.')->group(function () {
         Route::post('verify-email', 'AuthorizationController@emailVerification')->name('verify.email');
         Route::post('verify-sms', 'AuthorizationController@smsVerification')->name('verify.sms');
         Route::post('verify-g2fa', 'AuthorizationController@g2faVerification')->name('go2fa.verify');
+
 
         Route::middleware(['checkStatus'])->group(function () {
             Route::get('dashboard', 'UserController@home')->name('home');
@@ -67,11 +72,8 @@ Route::name('user.')->group(function () {
             Route::get('transactions','UserController@transactions')->name('transactions');
 
             //escrow
-
-            Route::get('escrow-create','EscrowController@create')->name('escrow.create');
-            Route::post('escrow-create','EscrowController@nextToStore');
-            Route::get('escrow-submit','EscrowController@escrowSubmit')->name('escrow.submit');
             Route::post('escrow-submit','EscrowController@escrowStore');
+            
 
             Route::post('escrow-cancel/{hash}','EscrowController@escrowCancel')->name('escrow.cancel');
             Route::post('escrow-accept/{hash}','EscrowController@escrowAccept')->name('escrow.accept');
